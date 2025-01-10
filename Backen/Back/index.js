@@ -24,7 +24,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended:false}));
 app.use(express.static("public"));
 app.use(cookieParser());
-app.use(cors(cors_options));consol
+app.use(cors(cors_options));
 app.use('/admin',(req,res,next)=>{
     next();
 },admin_router);
